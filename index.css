@@ -1,0 +1,152 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#ece5dd;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.chat-container{
+width:400px;
+height:700px;
+background:white;
+display:flex;
+flex-direction:column;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.header{
+background:#075e54;
+color:white;
+padding:15px;
+font-size:20px;
+font-weight:bold;
+}
+
+.chat-box{
+flex:1;
+padding:10px;
+overflow-y:auto;
+background:#e5ddd5;
+background-image:url("papa.jpg");
+background-size: cover;
+}
+
+.message{
+background:#dcf8c6;
+padding:10px;
+margin:5px 0;
+border-radius:10px;
+max-width:80%;
+margin-left:auto;
+word-wrap:break-word;
+}
+
+.input-area{
+display:flex;
+padding:10px;
+gap:5px;
+background:white;
+}
+
+.input-area input{
+flex:1;
+padding:10px;
+border:1px solid #ccc;
+border-radius:20px;
+}
+
+.input-area button{
+border:none;
+background:#25d366;
+color:white;
+padding:10px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.emoji-box{
+display:none;
+padding:10px;
+font-size:25px;
+background:white;
+cursor:pointer;
+}
+
+.camera-area{
+display:none;
+flex-direction:column;
+align-items:center;
+padding:10px;
+}
+
+video{
+width:100%;
+border-radius:10px;
+}
+
+canvas{
+display:none;
+}.dark {
+    background:#111;
+}
+
+.dark .chat-container{
+    background:#222;
+}
+
+.dark .chat-box{
+    background:#1a1a1a;
+}.message{
+    background:#dcf8c6;
+    padding:10px 15px;
+    margin:8px 0;
+    border-radius:15px;
+    max-width:75%;
+    margin-left:auto;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+}.message small{
+    display:block;
+    text-align:right;
+    color:#666;
+    font-size:11px;
+}.sent{
+    background:#dcf8c6;
+    margin-left:auto;
+}
+
+.received{
+    background:white;
+    margin-right:auto;
+}.header{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}.message{
+    animation:fadeIn .3s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
